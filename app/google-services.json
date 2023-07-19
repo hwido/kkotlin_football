@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "249460840002",
+    "project_id": "football-f5069",
+    "storage_bucket": "football-f5069.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249460840002:android:58f034f37941d14a4b7fdb",
+        "android_client_info": {
+          "package_name": "com.kkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249460840002-cg81ji67eqrgsoevrlre9patk6fq2mm2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxdCorcmM7HGpRQSn8i8U8xdghDI2tAeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249460840002-cg81ji67eqrgsoevrlre9patk6fq2mm2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

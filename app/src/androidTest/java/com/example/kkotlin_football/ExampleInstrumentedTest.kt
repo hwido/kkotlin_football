@@ -1,4 +1,4 @@
-package com.example.football_manager
+package com.example.kkotlin_football
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

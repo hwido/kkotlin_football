@@ -1,4 +1,4 @@
-package com.example.football_manager
+package com.example.kkotlin_football
 
 import org.junit.Test
 

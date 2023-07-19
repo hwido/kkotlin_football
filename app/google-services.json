@@ -1,33 +1,62 @@
 {
   "project_info": {
-    "project_number": "249460840002",
-    "project_id": "football-f5069",
-    "storage_bucket": "football-f5069.appspot.com"
+    "project_number": "816453110094",
+    "project_id": "football-d87af",
+    "storage_bucket": "football-d87af.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:249460840002:android:58f034f37941d14a4b7fdb",
+        "mobilesdk_app_id": "1:816453110094:android:1211bbe599f8dea2b9761f",
         "android_client_info": {
-          "package_name": "com.kkotlin"
+          "package_name": "com.example.football"
         }
       },
       "oauth_client": [
         {
-          "client_id": "249460840002-cg81ji67eqrgsoevrlre9patk6fq2mm2.apps.googleusercontent.com",
+          "client_id": "816453110094-0n0r3fcd469c41kauf54t8nr0ij1gg2m.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBxdCorcmM7HGpRQSn8i8U8xdghDI2tAeQ"
+          "current_key": "AIzaSyDDcidw53NT9CpAQl4X2d-AS3geWQ583Us"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "249460840002-cg81ji67eqrgsoevrlre9patk6fq2mm2.apps.googleusercontent.com",
+              "client_id": "816453110094-0n0r3fcd469c41kauf54t8nr0ij1gg2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816453110094:android:20cc803db9f2f509b9761f",
+        "android_client_info": {
+          "package_name": "com.hwido.football"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816453110094-0n0r3fcd469c41kauf54t8nr0ij1gg2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDcidw53NT9CpAQl4X2d-AS3geWQ583Us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816453110094-0n0r3fcd469c41kauf54t8nr0ij1gg2m.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

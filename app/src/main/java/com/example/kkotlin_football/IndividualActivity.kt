@@ -8,4 +8,8 @@ class IndividualActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_individual)
     }
+
+    //이거 파베연결 내용있어서 좀 따 같이 옮기 겠음
+
+
 }

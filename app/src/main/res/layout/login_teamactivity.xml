@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginTeamActivity"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/login_teamactivity_propile_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="구단 프로필 편집"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_weight="3"/>
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/login_teamactivity_profilePictureArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/login_teamactivity_profileImageArea"
+                android:src="@drawable/tot2"
+                android:layout_width="150dp"
+                android:scaleType="fitXY"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/radius_image"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/login_teamactivity_changeProfileTakePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="사진촬영"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/login_teamactivity_changeProfileGalleryPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="프로필 사진 바꾸기"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:id="@+id/login_teamactivity_nameArea"
+                android:layout_marginLeft="20dp"
+                android:layout_width="300dp"
+                android:hint="username"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="사용자 이름"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:id="@+id/login_teamactivity_nicknameArea"
+                android:layout_width="300dp"
+                android:hint="nickname"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="성별 대명사"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:id="@+id/login_teamactivity_sexArea"
+                android:layout_width="300dp"
+                android:layout_marginLeft="20dp"
+                android:hint="M/F"
+                android:layout_height="50dp"
+                android:layout_weight="8"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="주 구장"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:id="@+id/login_teamactivity_homegroundArea"
+                android:layout_width="300dp"
+                android:layout_marginLeft="20dp"
+                android:hint="homeground"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="주종목"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:id="@+id/login_teamactivity_mainExerciseArea"
+                android:layout_width="300dp"
+                android:layout_marginLeft="20dp"
+                android:hint="mainExercise"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="선호 나이대"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:id="@+id/login_teamactivity_ageArea"
+                android:hint="age"
+                android:layout_width="300dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="추천인 코드"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:id="@+id/login_teamactivity_recommendArea"
+                android:hint="recommendationcode"
+                android:layout_height="50dp"
+                android:layout_width="300dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/goToIndividualButton"
+            android:text="계속"
+            android:layout_margin="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>

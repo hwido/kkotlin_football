@@ -1,212 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TeamViewActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".TeamViewActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
-    <TextView
-        android:id="@+id/propile_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="구단 프로필 편집"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:layout_weight="3"/>
-
+        <TextView
+            android:id="@+id/propile_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="구단 프로필 편집"
+            android:textSize="20sp" />
     </LinearLayout>
 
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/profilePictureArea"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/profileImageArea"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/radius_image"
+        android:scaleType="fitXY"
+        android:src="@drawable/tot2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="20dp">
-
-        <ImageView
-            android:id="@+id/profileImageArea"
-            android:src="@drawable/tot2"
-            android:layout_width="150dp"
-            android:scaleType="fitXY"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:padding="10dp"
-            android:background="@drawable/radius_image"/>
-
-
-    </androidx.cardview.widget.CardView>
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="307dp" />
 
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        tools:layout_editor_absoluteX="0dp">
 
         <TextView
-        android:id="@+id/changeProfileTakePicture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="사진촬영"
-        android:textAlignment="center"
-        android:layout_margin="15dp"
-        android:layout_weight="1"/>
+            android:id="@+id/changeProfileTakePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="사진촬영"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/changeProfileGalleryPicture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="프로필 사진 바꾸기"
-            android:textAlignment="center"
-            android:layout_margin="15dp"
-            android:layout_weight="1" />
+            android:textAlignment="center" />
 
     </LinearLayout>
 
 
-
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3">
 
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:text="이름"
-            android:textSize="20dp"
-            android:layout_marginLeft="5dp"/>
+            android:textSize="20dp" />
+
         <EditText
             android:id="@+id/nameArea"
-            android:layout_marginLeft="20dp"
             android:layout_width="300dp"
-            android:hint="username"
-            android:layout_height="50dp" />
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:hint="username" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteX="16dp">
+
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:text="사용자 이름"
-            android:textSize="20dp"
-            android:layout_marginLeft="5dp"/>
+            android:textSize="20dp" />
+
         <EditText
-            android:layout_marginLeft="20dp"
             android:id="@+id/nicknameArea"
             android:layout_width="300dp"
-            android:hint="nickname"
-            android:layout_height="50dp"/>
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:hint="nickname" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:layout_editor_absoluteX="55dp">
 
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="성별 대명사"
-            android:textSize="20dp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:text="성별"
+            android:textSize="20dp" />
+
         <EditText
             android:id="@+id/sexArea"
             android:layout_width="300dp"
-            android:layout_marginLeft="20dp"
-            android:hint="M/F"
             android:layout_height="50dp"
-            android:layout_weight="8"/>
+            android:layout_marginLeft="20dp"
+            android:layout_weight="8"
+            android:hint="M/F" />
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/linearLayout6"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        tools:layout_editor_absoluteX="61dp">
 
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:text="주 구장"
-            android:textSize="20dp"
-            android:layout_marginLeft="5dp"/>
+            android:textSize="20dp" />
+
         <EditText
             android:id="@+id/homegroundArea"
             android:layout_width="300dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="20dp"
-            android:hint="homeground"
-            android:layout_height="50dp" />
+            android:hint="homeground" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout7"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        tools:layout_editor_absoluteX="0dp">
 
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:text="주종목"
-            android:textSize="20dp"
-            android:layout_marginLeft="5dp"/>
+            android:textSize="20dp" />
+
         <EditText
             android:id="@+id/mainExerciseArea"
             android:layout_width="300dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="20dp"
-            android:hint="mainExercise"
-            android:layout_height="50dp"/>
+            android:hint="mainExercise" />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="선호 나이대"
-            android:textSize="20dp"
-            android:layout_marginLeft="5dp"/>
-        <EditText
-            android:id="@+id/ageArea"
-            android:hint="age"
-            android:layout_width="300dp"
-            android:layout_marginLeft="20dp"
-            android:layout_height="50dp"/>
-    </LinearLayout>
     <LinearLayout
+        android:id="@+id/linearLayout8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        tools:layout_editor_absoluteX="16dp">
 
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="추천인 코드"
-            android:textSize="20dp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:text="선호 나이대"
+            android:textSize="20dp" />
+
         <EditText
-            android:id="@+id/recommendArea"
-            android:hint="recommendationcode"
-            android:layout_height="50dp"
+            android:id="@+id/ageArea"
             android:layout_width="300dp"
-            android:layout_marginLeft="20dp" />
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:hint="age" />
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="추천인 코드"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/recommendArea"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:hint="recommendationcode" />
+    </LinearLayout>
 
 
     <Button
         android:id="@+id/goToIndividualButton"
-        android:text="계속"
-        android:layout_margin="25dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+
+        android:text="계속"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

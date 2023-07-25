@@ -3,7 +3,7 @@ package com.example.kkotlin_football
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.football_manager.databinding.ActivityMainBinding
+import com.example.kkotlin_football.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.football_manager'
+    namespace 'com.example.kkotlin_football'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.football_manager"
+        applicationId "com.example.kkotlin_football"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -48,4 +48,6 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.15.1'
     //coil
     implementation("io.coil-kt:coil:2.4.0")
+    //dexter
+    implementation 'com.karumi:dexter:6.2.3'
 }

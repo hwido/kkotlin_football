@@ -7,35 +7,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:816453110094:android:1211bbe599f8dea2b9761f",
-        "android_client_info": {
-          "package_name": "com.example.football"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "816453110094-0n0r3fcd469c41kauf54t8nr0ij1gg2m.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDDcidw53NT9CpAQl4X2d-AS3geWQ583Us"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "816453110094-0n0r3fcd469c41kauf54t8nr0ij1gg2m.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:816453110094:android:20cc803db9f2f509b9761f",
         "android_client_info": {
           "package_name": "com.hwido.football"

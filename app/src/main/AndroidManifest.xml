@@ -13,7 +13,26 @@
         android:theme="@style/Theme.Football"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".MainActivity"
+=======
+            android:name=".LoginIndividualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginChoose"
+            android:exported="false" />
+        <activity
+            android:name=".LoginTeamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginIndividualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginSigninpage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginMainpage"
+>>>>>>> b9b516a (after merge)
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -33,16 +33,16 @@ class LoginIndividualActivity : AppCompatActivity() {
 //    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 //        super.onViewCreated(view, savedInstanceState)
 //
-////        var fbAuth : FirebaseAuth? = null
-////        var fbFirestore : FirebaseFirestore? = null
-////
-////        fbAuth = FirebaseAuth.getInstance()
-////        fbFirestore = FirebaseFirestore.getInstance()
+//        var fbAuth : FirebaseAuth? = null
+//        var fbFirestore : FirebaseFirestore? = null
 //
-////        val check = view.findViewById<EditText>(R.id.membership_personal_check)
+//        fbAuth = FirebaseAuth.getInstance()
+//        fbFirestore = FirebaseFirestore.getInstance()
+//
+//        val check = view.findViewById<EditText>(R.id.membership_personal_check)
 //        val finalButton = view.findViewById<Button>(R.id.login_individualactivity_finalButton)
-////
-////
+//
+//
 //        finalButton.setOnClickListener {
 //
 //            val database = Firebase.database

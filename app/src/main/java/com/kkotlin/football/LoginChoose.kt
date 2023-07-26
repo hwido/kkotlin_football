@@ -1,4 +1,4 @@
-package com.hwido.football
+package com.kkotlin.football
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

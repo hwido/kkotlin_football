@@ -1,4 +1,4 @@
-package com.hwido.football
+package com.kkotlin.football
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +9,7 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.hwido.football.R
 
 class LoginSigninpage : AppCompatActivity() {
     private lateinit var auth : FirebaseAuth

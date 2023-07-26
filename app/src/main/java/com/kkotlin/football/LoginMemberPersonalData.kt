@@ -1,4 +1,4 @@
-package com.hwido.football
+package com.kkotlin.football
 
 import android.widget.Button
 import android.widget.EditText

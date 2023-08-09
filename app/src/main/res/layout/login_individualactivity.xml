@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.kkotlin.football.LoginIndividualActivity"
+        tools:context=".LoginIndividualActivity"
         android:id="@+id/login_individualactivity_display">
 
 
@@ -36,6 +37,7 @@
                 android:gravity="center">
 
                 <ImageView
+                    android:id="@+id/individualPicture"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:src="@drawable/sangjin"
@@ -43,7 +45,34 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                tools:layout_editor_absoluteX="0dp">
 
+                <TextView
+                    android:id="@+id/changeProfileTakePicture_individual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="사진촬영"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/changeProfileGalleryPicture_individual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="프로필 사진 바꾸기"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"

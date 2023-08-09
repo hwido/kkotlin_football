@@ -69,4 +69,7 @@ dependencies {
     implementation("io.coil-kt:coil:2.4.0")
 
     annotationProcessor 'com.android.databinding:compiler:3.1.4'
+
+    //dexter
+    implementation 'com.karumi:dexter:6.2.3'
 }

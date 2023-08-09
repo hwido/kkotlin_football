@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.kkotlin.football.LoginTeamActivity"
+        tools:context=".LoginTeamActivity"
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/login_teamactivity_linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
 
             <TextView
@@ -28,32 +31,37 @@
         </LinearLayout>
 
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/login_teamactivity_profilePictureArea"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/profileImageArea"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/radius_image"
+            android:scaleType="fitXY"
+            android:src="@drawable/tot2"
+            app:layout_constraintBottom_toTopOf="@+id/login_teamactivity_linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_teamactivity_linearLayout" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/login_teamactivity_guideline3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="20dp">
-
-            <ImageView
-                android:id="@+id/login_teamactivity_profileImageArea"
-                android:src="@drawable/tot2"
-                android:layout_width="150dp"
-                android:scaleType="fitXY"
-                android:layout_height="150dp"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:background="@drawable/radius_image"/>
-
-
-        </androidx.cardview.widget.CardView>
-
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="307dp" />
 
         <LinearLayout
+            android:id="@+id/login_teamactivity_linearLayout2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/login_teamactivity_guideline3"
+            tools:layout_editor_absoluteX="0dp">
 
             <TextView
-                android:id="@+id/login_teamactivity_changeProfileTakePicture"
+                android:id="@+id/changeProfileTakePicture"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -63,7 +71,7 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/login_teamactivity_changeProfileGalleryPicture"
+                android:id="@+id/changeProfileGalleryPicture"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -77,8 +85,11 @@
 
 
         <LinearLayout
+            android:id="@+id/login_teamactivity_linearLayout3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/login_teamactivity_guideline3">
 
             <TextView
                 android:layout_width="100dp"
@@ -95,8 +106,12 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/login_teamactivity_linearLayout4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/login_teamactivity_linearLayout3"
+            tools:layout_editor_absoluteX="16dp">
+
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
@@ -112,8 +127,11 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/login_teamactivity_linearLayout5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/login_teamactivity_linearLayout4"
+            tools:layout_editor_absoluteX="55dp">
 
             <TextView
                 android:layout_width="100dp"
@@ -129,9 +147,13 @@
                 android:layout_height="50dp"
                 android:layout_weight="8"/>
         </LinearLayout>
+
         <LinearLayout
+            android:id="@+id/login_teamactivity_linearLayout6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/login_teamactivity_linearLayout5"
+            tools:layout_editor_absoluteX="61dp">
 
             <TextView
                 android:layout_width="100dp"
@@ -148,8 +170,11 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/login_teamactivity_linearLayout7"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/login_teamactivity_linearLayout6"
+            tools:layout_editor_absoluteX="0dp">
 
             <TextView
                 android:layout_width="100dp"
@@ -164,9 +189,13 @@
                 android:hint="mainExercise"
                 android:layout_height="50dp"/>
         </LinearLayout>
+
         <LinearLayout
+            android:id="@+id/login_teamactivity_linearLayout8"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/login_teamactivity_linearLayout7"
+            tools:layout_editor_absoluteX="16dp">
 
             <TextView
                 android:layout_width="100dp"
@@ -181,10 +210,13 @@
                 android:layout_marginLeft="20dp"
                 android:layout_height="50dp"/>
         </LinearLayout>
+
         <LinearLayout
+            android:id="@+id/login_teamactivity_linearLayout9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
+            app:layout_constraintTop_toBottomOf="@+id/login_teamactivity_linearLayout8"
+            tools:layout_editor_absoluteX="0dp">
 
             <TextView
                 android:layout_width="100dp"
@@ -203,10 +235,14 @@
 
         <Button
             android:id="@+id/goToIndividualButton"
-            android:text="계속"
-            android:layout_margin="25dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
 
-    </LinearLayout>
+            android:text="계속"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_teamactivity_linearLayout9"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

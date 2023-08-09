@@ -36,6 +36,10 @@ class LoginMainpage : AppCompatActivity() {
                         Toast.makeText(this, "실패", Toast.LENGTH_SHORT).show()
                     }
                 }
+
+            // 메인 페이지로 넘어간다
+            val intent = Intent(this, MainMainpage::class.java)
+            startActivity(intent)
         }
 
         // 회원가입 버튼 누르면 signin인 회원가입 페이지로 넘어가게 된다

@@ -10,12 +10,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.provider.Settings
+import android.util.Log
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import coil.load
 import coil.transform.RoundedCornersTransformation
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
+import com.hwido.football.R
 import com.hwido.football.databinding.LoginTeamactivityBinding
 import com.karumi.dexter.Dexter
 import com.karumi.dexter.MultiplePermissionsReport
@@ -35,6 +40,24 @@ class LoginTeamActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.goToIndividualButton.setOnClickListener { // 원래 goToIndividualButton이 아닌, login_teamactivity_goToIndividualButton 사용하려 했으나, 그럴 경우 에러 발생
+            // store team data
+            val database = Firebase.database
+            val myRef = database.getReference("membership_team")
+            val teamName = findViewById<EditText>(R.id.login_teamactivity_nameArea)?.text.toString()
+            val representativeName = findViewById<EditText>(R.id.login_teamactivity_nicknameArea).text.toString()
+            val sex = findViewById<EditText>(R.id.login_teamactivity_sexArea).text.toString()
+            val homeGround = findViewById<EditText>(R.id.login_teamactivity_homegroundArea).text.toString()
+            val mainExercise = findViewById<EditText>(R.id.login_teamactivity_mainExerciseArea).text.toString()
+            val age = findViewById<EditText>(R.id.login_teamactivity_ageArea).text.toString()
+            val data = LoginTeamData(teamName, representativeName, sex, homeGround, mainExercise, age)
+
+            Log.d(data.teamName, data.teamName.toString())
+
+            myRef
+                .push()
+                .setValue(data)
+
+            // move to individual page
             goToIndividualMaker()
         }
 

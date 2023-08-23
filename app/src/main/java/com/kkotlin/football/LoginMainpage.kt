@@ -38,7 +38,7 @@ class LoginMainpage : AppCompatActivity() {
                 }
 
             // 메인 페이지로 넘어간다
-            val intent = Intent(this, MainMainpage::class.java)
+            val intent = Intent(this, MainFragmentLayout::class.java)
             startActivity(intent)
         }
 

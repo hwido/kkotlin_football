@@ -37,6 +37,9 @@
             android:name="com.kkotlin.football.LoginSigninpage"
             android:exported="false" />
         <activity
+            android:name="com.kkotlin.football.MainFragmentLayout"
+            android:exported="false" />
+        <activity
             android:name="com.kkotlin.football.LoginMainpage"
             android:exported="true">
             <intent-filter>

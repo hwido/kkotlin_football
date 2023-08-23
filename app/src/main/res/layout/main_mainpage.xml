@@ -52,9 +52,9 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:src=""
+
                 android:background="#008000"
-                android:contentDescription="TODO" />
+                 />
 
         </LinearLayout>
 
@@ -105,9 +105,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightsum="4">
+        android:weightSum="4">
 
         <Button
+            android:id="@+id/navigation_main"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="메인"
@@ -115,6 +116,7 @@
             />
 
         <Button
+            android:id="@+id/navigation_team"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="팀"
@@ -122,11 +124,22 @@
             />
 
         <Button
+            android:id="@+id/navigation_gain"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="개인"
             android:textSize="15sp"
             />
+
+        <Button
+            android:id="@+id/navigation_setting"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:text="개인 정보"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
 
         <Button
             android:layout_width="110dp"
@@ -138,4 +151,3 @@
     </LinearLayout>
 
 
-</LinearLayout>

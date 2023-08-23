@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/mainMainpage">
+
+    <fragment
+        android:id="@+id/mainMainpage"
+        android:name="com.kkotlin.football.MainMainpage"
+        android:label="main_mainpage"
+        tools:layout="@layout/main_mainpage" >
+        <action
+            android:id="@+id/action_mainMainpage_to_mainTeampage"
+            app:destination="@id/mainTeampage" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainTeampage"
+        android:name="com.kkotlin.football.MainTeampage"
+        android:label="MainTeampage"
+        tools:layout="@layout/main_teampage">
+
+        <action
+            android:id="@+id/action_mainTeampage_to_mainMainpage"
+            app:destination="@id/mainMainpage" />
+    </fragment>
+</navigation>

@@ -41,6 +41,9 @@ xml 파일도 수정했으나, 여전히 오류코드 존재
 2023/08/13
 팀 정보 저장 활성화.
 
-2023/08/22
-메인페이지에서 버튼 누르면 세부 내용 바뀌는 작업 완료. fragment 이용해서 해당 부분 바뀌도록 진행함.
-이후, 나머지 2명의 코드 합치는 작업과 세부 페이지에 들어갈 내용 만드는 작업 진행 예정
+2023/08/19
+기존 메인의 메인/팀/개인 등을 Activity에서 Fragment로 변경, Navigation으로 변경 완료. 기존 LoginMainpage -> MainMainpage의 순서를 LoginMaingpage -> MainFragmentLayout -> Mainmainpage로 변경 (MainFragmentLayout이라는 Activity 위에 MainMainpage, Mainteampage 프래그먼트들이 올려진 구조)
+
+2023/08/25 /0720 TeamMain -> MainTeam 일괄변경완료 기존 Fragment들을 indent로 변경 및 Mainmain 파트와 연결 완료 하단버튼들 id: main_button_main / main_button_team / main_button_individual / main_button_setting 현재는 각 Main0000page.kt 내에 onclicklistener로 구현되어있으나 추후 하단버튼 class 만들어서 객체화 하는 방향으로
+
+

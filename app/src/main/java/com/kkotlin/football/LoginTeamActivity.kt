@@ -19,6 +19,7 @@ import androidx.appcompat.app.AlertDialog
 import coil.load
 import coil.transform.RoundedCornersTransformation
 import com.google.firebase.database.ktx.database
+import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.hwido.football.R
 import com.hwido.football.databinding.LoginTeamactivityBinding
@@ -41,8 +42,8 @@ class LoginTeamActivity : AppCompatActivity() {
 
         binding.goToIndividualButton.setOnClickListener { // 원래 goToIndividualButton이 아닌, login_teamactivity_goToIndividualButton 사용하려 했으나, 그럴 경우 에러 발생
             // store team data
-            val database = Firebase.database
-            val myRef = database.getReference("membership_team")
+            val database = Firebase.firestore
+            val myRef = database.collection("user").document("membership_team")
             val teamName = findViewById<EditText>(R.id.login_teamactivity_nameArea)?.text.toString()
             val representativeName = findViewById<EditText>(R.id.login_teamactivity_nicknameArea).text.toString()
             val sex = findViewById<EditText>(R.id.login_teamactivity_sexArea).text.toString()
@@ -54,8 +55,7 @@ class LoginTeamActivity : AppCompatActivity() {
             Log.d(data.teamName, data.teamName.toString())
 
             myRef
-                .push()
-                .setValue(data)
+                .set(data)
 
             // move to individual page
             goToIndividualMaker()

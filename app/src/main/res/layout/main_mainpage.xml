@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Kkotlin"
         android:textSize="40sp"
@@ -24,26 +24,6 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="내 구단"-->
-<!--            android:textSize="20sp"-->
-<!--            />-->
-<!--        -->
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="5dp">-->
-
-<!--            <ImageButton-->
-<!--                android:layout_width="60dp"-->
-<!--                android:layout_height="60dp"-->
-<!--                android:background="@drawable/radius_image"-->
-<!--                android:src="@drawable/my_team"-->
-<!--                android:contentDescription="TODO" />-->
-<!--        </LinearLayout>-->
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,7 +32,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:src=""
+                android:src="@drawable/sangjin"
                 android:background="#008000"
                 android:contentDescription="TODO" />
 
@@ -64,54 +44,40 @@
             android:layout_marginTop="5dp"
             android:weightSum="4">
 
-            <Button
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:text="일정"
-                android:textSize="15sp"
-                />
-
-            <Button
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:text="순위"
-                android:textSize="15sp"
-                />
-
-            <Button
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:text="팀 기록"
-                android:textSize="15sp"
-                />
-
-            <Button
-                android:layout_width="110dp"
-                android:layout_height="50dp"
-                android:text="개인 기록"
-                android:textSize="15sp"
-                />
 
         </LinearLayout>
 
-        <LinearLayout
+        <fragment
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/main_mainpage_fragmentMenu"
+            android:name="com.kkotlin.football.MainMainpageFragmentMenu"
+            tools:layout="@layout/main_mainpage_fragment_menu"
+            tools:ignore="MissingConstraints"
+            />
 
-        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/main_mainpage_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_mainpage_fragmentMenu"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </FrameLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightsum="4">
+        android:weightSum="4">
 
         <Button
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="메인"
             android:textSize="15sp"
+            android:id="@+id/main_button_main"
             />
 
         <Button
@@ -119,6 +85,7 @@
             android:layout_height="50dp"
             android:text="팀"
             android:textSize="15sp"
+            android:id="@+id/main_button_team"
             />
 
         <Button
@@ -126,6 +93,7 @@
             android:layout_height="50dp"
             android:text="개인"
             android:textSize="15sp"
+            android:id="@+id/main_button_individual"
             />
 
         <Button
@@ -133,9 +101,12 @@
             android:layout_height="50dp"
             android:text="개인 정보"
             android:textSize="15sp"
+            android:id="@+id/main_button_setting"
             />
 
     </LinearLayout>
+
+
 
 
 </LinearLayout>

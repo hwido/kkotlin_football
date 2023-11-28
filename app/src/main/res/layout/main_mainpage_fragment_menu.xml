@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/main_mainpage_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="일정"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/main_mainpage_teamranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="순위"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/main_mainpage_teamrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="팀 기록"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/main_mainpage_individualrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="개인 기록"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        />
+
+</LinearLayout>

@@ -47,7 +47,7 @@ class LoginMainpage : AppCompatActivity() {
         joininBtn.setOnClickListener {
             val intent = Intent(this, LoginSigninpage::class.java)
             startActivity(intent)
+            val i = 1
         }
-        // change
     }
 }
